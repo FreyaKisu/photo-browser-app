@@ -15,7 +15,7 @@ function Photo({ match, photos }) {
 
   return (
     <div>
-      <Link to="/">Home</Link>
+      <Link className="home-link" to="/"><button>Back to the main page</button></Link>
       <h2>{photo.title}</h2>
 
       <img src={photo.url} alt={photo.title} />

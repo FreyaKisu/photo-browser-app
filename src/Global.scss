@@ -1,0 +1,39 @@
+$linkColor: rgb(59, 58, 58);
+$buttonColor: rgb(145, 145, 255);
+
+.photo-grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: "hidden";
+}
+.home-link {
+  text-decoration: none;
+  button {
+    border-radius: 20%;
+    background-color: $buttonColor;
+    border: none;
+    color: $linkColor;
+  }
+}
+
+.photo-app {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.photo-grid {
+  list-style: none;
+  display: grid;
+  height: auto;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
+  grid-gap: 10px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+
+  :hover {
+    opacity: 0.54;
+  }
+}

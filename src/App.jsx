@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import "./Global.css";
+import "./Global.scss";
 import PhotoGrid from "./components/PhotoGrid";
 import Photo from "./components/Photo";
 

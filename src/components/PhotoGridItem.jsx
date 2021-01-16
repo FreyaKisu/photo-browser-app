@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Global.css";
+import "../Global.scss";
 
 function PhotoGridItem({ data }) {
   //console.log(data);
