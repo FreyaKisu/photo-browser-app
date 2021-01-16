@@ -6,7 +6,7 @@ import PhotoGrid from "./components/PhotoGrid";
 import Photo from "./components/Photo";
 
 const getPhotos = () => {
-  return fetch("http://jsonplaceholder.typicode.com/photos")
+  return fetch("https://jsonplaceholder.typicode.com/photos")
     .then((response) => response.json())
     .then((data) => data);
 };
