@@ -2,40 +2,38 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./Global.scss";
-import PhotoGrid from "./components/PhotoGrid";
-import Photo from "./components/Photo";
-
-const getPhotos = () => {
-  return fetch("https://jsonplaceholder.typicode.com/photos")
-    .then((response) => response.json())
-    .then((data) => data);
-};
+import GridView from "./views/GridView"
+import DetailView from "./views/DetailView"
+import getPhotos from "./api/getPhotos"
 
 function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    console.log("APP MOUNT");
     getPhotos().then((r) => {
       const firstAlbum = r.filter((photo) => photo.albumId === 1);
       setPhotos(firstAlbum);
     });
   }, []);
+  
   return (
     <div className="photo-app">
-      <header>
-        <h1>Photo Browser</h1>
+       <header>
+       <div className ="text-container">
+     <div className="sign">
+      <span className="fast-flicker">Pho</span>to<span className="flicker">Bro</span>wser
+    </div></div>
       </header>
 
       <Router>
         <Switch>
           <Route exact path="/">
-            <PhotoGrid photos={photos} />
+          <GridView photos={photos}/>
           </Route>
 
           <Route
             path="/photo/:id"
-            render={(props) => <Photo {...props} photos={photos} />}
+            render={(props) => <DetailView {...props} photos={photos} />}
           />
         </Switch>
       </Router>

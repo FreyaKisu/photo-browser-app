@@ -15,10 +15,14 @@ function Photo({ match, photos }) {
 
   return (
     <div>
-      <Link className="home-link" to="/"><button>Back to the main page</button></Link>
-      <h2>{photo.title}</h2>
-
-      <img src={photo.url} alt={photo.title} />
+      
+        <Link className="home-link" to="/">
+          <span>Home</span>
+        </Link>
+        <div className="details-container">
+        <h2>Title: {photo.title}</h2>
+        <img src={photo.url} alt={photo.title} />
+      </div>
     </div>
   );
 }

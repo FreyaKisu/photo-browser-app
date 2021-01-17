@@ -1,3 +1,21 @@
+Photo Browser Demo Application 
+(Auth: Edit Orosz)
+
+This project has been built with React.
+
+You can test it online on Heroku: 
+
+Otherwise, you can download it from GitHub: https://github.com/FreyaKisu/photo-browser-app
+
+After downloading, you need to run npm install for installing the node packages.
+
+Run the project on localhost:3000 by default, with npm start.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
