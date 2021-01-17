@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "../Global.scss";
 
 function PhotoGridItem({ data }) {
-  //console.log(data);
   const { thumbnailUrl, title, id } = data;
 
   const photoUrl = `/photo/${id}`;
