@@ -1,11 +1,11 @@
-Photo Browser Demo Application 
+# Photo Browser Demo Application 
 (Auth: Edit Orosz)
 
 This project has been built with React.
 
-You can test it online on Heroku: 
+You can test it online on Heroku: (https://photo-browser-app.herokuapp.com/)
 
-Otherwise, you can download it from GitHub: https://github.com/FreyaKisu/photo-browser-app
+Otherwise, you can download it from GitHub: (https://github.com/FreyaKisu/photo-browser-app)
 
 After downloading, you need to run npm install for installing the node packages.
 
